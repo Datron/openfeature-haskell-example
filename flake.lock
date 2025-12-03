@@ -52,7 +52,7 @@
     "gitignore": {
       "inputs": {
         "nixpkgs": [
-          "superposition-provider",
+          "superposition",
           "pre-commit-hooks",
           "nixpkgs"
         ]
@@ -119,6 +119,22 @@
     },
     "nixpkgs_2": {
       "locked": {
+        "lastModified": 1749794982,
+        "narHash": "sha256-Kh9K4taXbVuaLC0IL+9HcfvxsSUx8dPB5s5weJcc9pc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "ee930f9755f58096ac6e8ca94a1887e0534e2d81",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
         "lastModified": 1730768919,
         "narHash": "sha256-8AKquNnnSaJRXZxc5YmF/WfmxiHX6MMZZasRP6RRQkE=",
         "owner": "NixOS",
@@ -133,7 +149,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_3": {
+    "nixpkgs_4": {
       "locked": {
         "lastModified": 1751271578,
         "narHash": "sha256-P/SQmKDu06x8yv7i0s8bvnnuJYkxVGBWLWHaU+tt4YY=",
@@ -152,41 +168,15 @@
     "open-feature-hs": {
       "inputs": {
         "flake-parts": [
+          "superposition",
           "flake-parts"
         ],
         "haskell-flake": [
+          "superposition",
           "haskell-flake"
         ],
         "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1763022858,
-        "narHash": "sha256-LCeO1Ca/RtWzboMRjgvJM3GEfEU8nbVnDMAGOUXPhyk=",
-        "owner": "juspay",
-        "repo": "open-feature-haskell-sdk",
-        "rev": "e5b7f12044163bba6594900313f81733dd7ca738",
-        "type": "github"
-      },
-      "original": {
-        "owner": "juspay",
-        "repo": "open-feature-haskell-sdk",
-        "type": "github"
-      }
-    },
-    "open-feature-hs_2": {
-      "inputs": {
-        "flake-parts": [
-          "superposition-provider",
-          "flake-parts"
-        ],
-        "haskell-flake": [
-          "superposition-provider",
-          "haskell-flake"
-        ],
-        "nixpkgs": [
-          "superposition-provider",
+          "superposition",
           "nixpkgs"
         ]
       },
@@ -208,7 +198,7 @@
       "inputs": {
         "flake-compat": "flake-compat",
         "gitignore": "gitignore",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_3"
       },
       "locked": {
         "lastModified": 1749636823,
@@ -229,14 +219,13 @@
         "flake-parts": "flake-parts",
         "haskell-flake": "haskell-flake",
         "nixpkgs": "nixpkgs",
-        "open-feature-hs": "open-feature-hs",
-        "superposition-provider": "superposition-provider"
+        "superposition": "superposition"
       }
     },
     "rust-flake": {
       "inputs": {
         "crane": "crane",
-        "nixpkgs": "nixpkgs_3",
+        "nixpkgs": "nixpkgs_4",
         "rust-overlay": "rust-overlay"
       },
       "locked": {
@@ -256,7 +245,7 @@
     "rust-overlay": {
       "inputs": {
         "nixpkgs": [
-          "superposition-provider",
+          "superposition",
           "rust-flake",
           "nixpkgs"
         ]
@@ -275,7 +264,7 @@
         "type": "github"
       }
     },
-    "superposition-provider": {
+    "superposition": {
       "inputs": {
         "flake-parts": [
           "flake-parts"
@@ -283,20 +272,18 @@
         "haskell-flake": [
           "haskell-flake"
         ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "open-feature-hs": "open-feature-hs_2",
+        "nixpkgs": "nixpkgs_2",
+        "open-feature-hs": "open-feature-hs",
         "pre-commit-hooks": "pre-commit-hooks",
         "rust-flake": "rust-flake",
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1764340262,
-        "narHash": "sha256-LOMyuNuSRYy34yyiGkdx0jiCMu4edSs3aXzuSiWptvk=",
+        "lastModified": 1764744210,
+        "narHash": "sha256-Zs5/7ggQP9SrxvP2OQhX+Dbg3/YEeCB1ZTdysJ3xcVQ=",
         "owner": "juspay",
         "repo": "superposition",
-        "rev": "79732af7f8a0b573c28aec6771ade1852ca7d629",
+        "rev": "fb5a51c58de70d8c149cf6d94aa74ef25cbf345b",
         "type": "github"
       },
       "original": {
