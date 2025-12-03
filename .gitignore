@@ -1,3 +1,5 @@
 result/
 .direnv
-dist-newstyle/
+
+# Haskell
+/dist-newstyle
