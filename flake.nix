@@ -4,7 +4,7 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     haskell-flake.url = "github:srid/haskell-flake";
     superposition = {
-      url = "github:juspay/superposition";
+      url = "github:juspay/superposition/haskell-provider";
       inputs = {
         haskell-flake.follows = "haskell-flake";
         flake-parts.follows = "flake-parts";

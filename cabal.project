@@ -1,11 +1,12 @@
 packages: .
+
 source-repository-package
   type: git
   location: https://github.com/juspay/open-feature-haskell-sdk.git
 source-repository-package
   type: git
   location: https://github.com/juspay/superposition.git
-  tag: v0.95.1
+  branch: haskell-provider
   subdir: clients/haskell/superposition-bindings
           clients/haskell/sdk
           clients/haskell/open-feature-provider
